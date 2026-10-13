@@ -1,0 +1,22 @@
+/* 菜单管家样式 */
+.mm-setting-row { display: flex; align-items: center; gap: 6px; margin: 4px 0;
+    font-size: 13px; border-top: 2px solid transparent; }
+.mm-drag { flex: 0 0 18px; cursor: grab; opacity: .55; text-align: center; }
+.mm-drag:active { cursor: grabbing; }
+.mm-setting-row.dragging { opacity: .35; }
+.mm-setting-row.drag-over { border-top-color: #6cb2ff; }
+.mm-setting-row .mm-label { flex: 1; min-width: 0; overflow: hidden;
+    text-overflow: ellipsis; white-space: nowrap; }
+.mm-setting-row .mm-btn { width: 26px; height: 26px; padding: 0; flex: 0 0 26px;
+    border: none; border-radius: 6px; cursor: pointer; font-size: 12px;
+    background: #2b6cb0; color: #fff; }
+.mm-setting-row .mm-btn.mm-eye { background: #555; }
+.mm-setting-row.hidden-item .mm-label { opacity: .4; }
+.mm-setting-row.ctx-hidden .mm-label { opacity: .55; }
+.mm-ctx-tag { font-size: 11px; opacity: .7; }
+.mm-hint { font-size: 12px; opacity: .6; margin: 6px 0; }
+.mm-reset { margin-top: 8px; padding: 5px 12px; border: none; border-radius: 6px;
+    cursor: pointer; background: #8b3a3a; color: #fff; }
+
+/* 隐藏用的类：!important 压过酒馆每次开菜单时写入的内联样式 */
+#mm-drawer ~ * .mm-hidden-item, .mm-hidden-item { display: none !important; }

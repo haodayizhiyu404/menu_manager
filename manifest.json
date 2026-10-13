@@ -1,0 +1,13 @@
+{
+    "display_name": "菜单管家 (Menu Manager)",
+    "loading_order": 999,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "haodayizhiyu404",
+    "version": "0.1.5",
+    "hooks": {
+        "activate": "init"
+    }
+}
